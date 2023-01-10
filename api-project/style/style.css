@@ -1,3 +1,35 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(206, 235, 206);
+    margin: 0;
+}
+:root{
+    --textcolor: rgb(71, 27, 12);
+}
+#heading{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bungee', cursive;
+    /* font-family: 'VT323', monospace; */
+    color: var(--textcolor);
+    font-size: 2vw;
+    animation: bob .50s ease-out infinite;
+}
+@keyframes bob{
+    0% {
+        top: 7vh;
+      }
+    50%{
+        top: 7.25vh;
+    }
+    100%{
+        top: 7vh;
+    }
+}
+#carrotcastle{
+    height: 75vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24vh;
 }
