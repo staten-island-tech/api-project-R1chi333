@@ -1,31 +1,32 @@
 body{
-    background-color: rgb(244, 250, 255);
+    background-color: rgb(253, 254, 255);
     margin: 0;
+    overflow: hidden;
 }
 :root{
-    --textcolor: rgb(71, 27, 12);
+    --textcolor: rgb(95, 35, 16);
 }
 #heading{
     position: absolute;
-    width: 100vw;
+    width: 90vw;
     text-align: center;
-    left: 50%;
+    left: 50.71%;
     transform: translate(-50%, -49%);
     font-family: 'Bungee', cursive;
     /* font-family: 'VT323', monospace; */
     color: var(--textcolor);
     font-size: 2vw;
-    animation: bob .50s ease-out infinite;
+    animation: bob .70s ease-out infinite;
 }
 @keyframes bob{
     0% {
-        top: 7vh;
+        top: 8vh;
       }
-    50%{
-        top: 7.25vh;
+    30%{
+        top: 8.25vh;
     }
     100%{
-        top: 7vh;
+        top: 8vh;
     }
 }
 #carrotcastle{
@@ -34,7 +35,27 @@ body{
     left: 50%;
     transform: translate(-50%, -49%);
     z-index: 1;
+}
+.up{
     bottom: -35vh;
+}
+.down{
+    animation: godown 1s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes godown{
+    0% {
+        bottom: -35vh;
+    }
+    25%{
+        bottom: -35vh;
+    }
+    75%{
+        bottom: -50vh;
+    }
+    100%{
+        bottom: -110vh;
+    }
 }
 #grass{
     position: absolute;
@@ -43,4 +64,9 @@ body{
     width: 100vw;
     z-index: 0;
   }
-  
+#cloud1{
+    position: absolute;
+    width: 15vw;
+    top: 30vh;
+    right: 2vw;
+}
