@@ -38,21 +38,26 @@ body{
     bottom: -35vh;
     transform-origin:center ;
 }
+.opacity{
+    
+}
 .up{
-
+    bottom: -35vh;
 }
 .down{
-    animation: godown 3s ease-out;
+    animation: godown 6s ease-out;
     animation-fill-mode: forwards;
 }
 @keyframes godown{
-    from {
-        transform: translateY(0%);
-      }
-    
-      to {
-        transform: translateY(100%);
-      }
+    0%{
+        bottom: -35vh;
+    }
+    65%{
+        bottom: -30vh;
+    }
+    100%{
+        bottom: 100vh;
+    }
 }
 #grass{
     position: absolute;
@@ -66,4 +71,10 @@ body{
     width: 15vw;
     top: 30vh;
     right: 2vw;
+}
+#bun1{
+    position: absolute;
+    top: 37vh;
+    left: 34vw;
+    width: 7vw;
 }
