@@ -35,27 +35,24 @@ body{
     left: 50%;
     transform: translate(-50%, -49%);
     z-index: 1;
+    bottom: -35vh;
+    transform-origin:center ;
 }
 .up{
-    bottom: -35vh;
+
 }
 .down{
-    animation: godown 1s ease-out;
+    animation: godown 3s ease-out;
     animation-fill-mode: forwards;
 }
 @keyframes godown{
-    0% {
-        bottom: -35vh;
-    }
-    25%{
-        bottom: -35vh;
-    }
-    75%{
-        bottom: -50vh;
-    }
-    100%{
-        bottom: -110vh;
-    }
+    from {
+        transform: translateY(0%);
+      }
+    
+      to {
+        transform: translateY(100%);
+      }
 }
 #grass{
     position: absolute;
@@ -63,7 +60,7 @@ body{
     height: 100vh;
     width: 100vw;
     z-index: 0;
-  }
+}
 #cloud1{
     position: absolute;
     width: 15vw;
