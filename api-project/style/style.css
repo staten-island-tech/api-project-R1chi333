@@ -18,6 +18,7 @@ body{
     font-size: 2vw;
     animation: bob .70s ease-out infinite;
 }
+
 @keyframes bob{
     0% {
         top: 8vh;
@@ -37,26 +38,84 @@ body{
     z-index: 1;
     bottom: -35vh;
     transform-origin:center ;
+    background-image: url('../carrotcastle.png');
+    aspect-ratio: 1.90;
+    background-size: 100% 100%;
+    background-attachment: local;
+    z-index: 4;
+    transform-style: preserve-3d;
 }
-.opacity{
-    
+#bun1{
+    position: relative;
+    left:27%;
+    height: 16vh;
+    z-index: 0;
+    transform: translatez(-100px);
+}
+#bun3{
+    position: relative;
+    left:52%;
+    height: 16vh;
+    z-index: 0;
+    transform: translatez(-100px);
+}
+#bunflag{
+    position: relative;
+    left:28%;
+    height: 16vh;
+    z-index: 0;
+    transform: translatez(-100px);
+    /* top: -3%; */
+}
+.flagbefore{
+    rotate: 90deg;
+    top: 13.5%;
+}
+.flagraised{
+    animation: raiseflag .5s forwards;
+}
+@keyframes raiseflag{
+    from{
+        rotate: 90deg;
+        top: 13.5%;
+    }
+    to{
+        rotate: 0deg;
+        top: -3%;
+    }
+}
+.bunbefore{
+    top: 37%;
+}
+.bungoup{
+    animation: bungoup .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes bungoup{
+    from{
+        top: 37%;
+    }
+    to{
+        top: 20%;
+    }
+}
+.hide{
+    opacity: 0;
+    transition-duration: 1s;
 }
 .up{
     bottom: -35vh;
 }
 .down{
-    animation: godown 6s ease-out;
+    animation: godown 1.5s ease-in;
     animation-fill-mode: forwards;
 }
 @keyframes godown{
     0%{
         bottom: -35vh;
     }
-    65%{
-        bottom: -30vh;
-    }
     100%{
-        bottom: 100vh;
+        bottom: 60vh;
     }
 }
 #grass{
@@ -66,15 +125,60 @@ body{
     width: 100vw;
     z-index: 0;
 }
-#cloud1{
-    position: absolute;
-    width: 15vw;
-    top: 30vh;
-    right: 2vw;
+.grassdown{
+    bottom: 0;      
 }
-#bun1{
+.grassup{
+    animation: grassup 1.55s ease-in forwards;
+}
+@keyframes grassup{
+    from{
+        bottom: 0;  
+    }
+    to{
+        bottom: 100vh;
+    }
+}
+.grass2down{
+    bottom: -100vh;      
+}
+.grass2up{
+    animation: grass2up 1.55s ease-in forwards;
+}
+@keyframes grass2up{
+    from{
+        bottom: -100vh;  
+    }
+    to{
+        bottom: 0;
+    }
+}
+#grass2{
     position: absolute;
-    top: 37vh;
-    left: 34vw;
-    width: 7vw;
+    background-color: #dde3a4;
+    height: 100vh;
+    width: 100vw;
+    bottom: -100vh;
+    z-index: -1;
+}
+#skipbtncon{
+    position: absolute;
+    right: 1vw;    
+    top: 90vh;
+    padding: 1vw;
+}
+#skipbtn{
+    font-family: 'Bungee', cursive;
+    font-size: 1vw;
+    color: var(--textcolor);
+    background-color: #dde3a47c;
+    border: none;
+    border-radius: 30px;
+    transition-duration: .25s;
+}
+#skipbtn:hover{
+    scale: 120%;
+}
+#skipbtn:not(:hover){
+    scale: 100%;
 }
