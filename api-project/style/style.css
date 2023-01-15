@@ -155,7 +155,10 @@ body{
 }
 #grass2{
     position: absolute;
-    background-color: #dde3a4;
+    
+    background: linear-gradient(#dde3a4, rgb(255, 255, 255));
+
+    /* background-color: #dde3a4; */
     height: 100vh;
     width: 100vw;
     bottom: -100vh;

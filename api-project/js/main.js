@@ -20,7 +20,7 @@ startscreenDoMS.carrotcastle.addEventListener("click", function(){
         startscreenDoMS.grass2.classList.remove("grass2down")
         setTimeout(() => {
             startscreenDoMS.loadingin.remove();
-            document.body.style.backgroundColor = "#dde3a4";
+            document.body.style.backgroundColor = "rgb(255, 255, 255)";
           }, 1550)
       }, 1000)
     startscreenDoMS.skipbtncon.classList.add("hide")
