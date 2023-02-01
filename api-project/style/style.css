@@ -173,3 +173,7 @@ h1{
     width: 70vw;
     font-family: 'Inconsolata', monospace;
 }
+
+#giveuptext{
+    font-size: .8vw;
+}
