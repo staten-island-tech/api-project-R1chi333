@@ -156,6 +156,7 @@ h1{
 #actualprojectcontainerlmao{
     margin-left: 5vw;
     color: rgb(105, 66, 53);
+    padding-bottom: 3vw;
 }
 
 #racesShowPlace{
@@ -166,6 +167,7 @@ h1{
 #racelist{
     width: 15vw;
     font-size: .6vw;
+    font-family: 'Inconsolata', monospace;
 }
 #raceinfo{
     width: 70vw;
