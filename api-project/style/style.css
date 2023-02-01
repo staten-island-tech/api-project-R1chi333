@@ -150,3 +150,24 @@ h1{
 #createyourcharacterbtn2:not(hover){
     scale: 100%;
 }
+#userinput{
+    width: 50vw;
+}
+#actualprojectcontainerlmao{
+    margin-left: 5vw;
+}
+
+#racesShowPlace{
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
+}
+#racelist{
+    width: 15vw;
+    font-size: .6vw;
+}
+#raceinfo{
+    width: 70vw;
+    color: rgb(105, 66, 53);
+    font-family: 'Inconsolata', monospace;
+}
